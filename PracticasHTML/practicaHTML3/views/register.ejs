@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel='stylesheet' href='/stylesheets/register.css' />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&family=Work+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <a id="gotop"></a>
+        <a href="/" class="head">Home</a>
+        <a href="/about" class="head">About</a>
+        <a href="/music" class="head">Music</a>
+        <a href="/contact" class="head">Contact</a>
+        <a href="/register" class="head regist">Register</a>
+    <br>
+        <img src="/images/twitter.png" alt="logo twitter" class="logo">
+        <img src="/images/facebook.png" alt="logo facebook" class="logo">
+        <img src="/images/instagram.png" alt="logo instagram" class="logo">
+        <img src="/images/linkedin.png" alt="logo linkedin" class="logo">
+        <img src="/images/whatsapp.png" alt="los whatsapp" class="logo">
+    </header>
+
+    <h1>Register Form //</h1>
+    <form action="" method="GET">
+        <p><label for="name">Name</label> </p>
+        <p><input type="text" id="name" name="name" placeholder="Your name ..." class="formulario"> </p>
+        <p><label for="lastname">Lastname</label> </p>
+        <p><input type="text" id="lastname" name="lastname" placeholder="Your lastname ..." class="formulario"> </p>
+        <p><label for="email">E-mail</label> </p>
+        <p><input type="email" id="email" name="email" placeholder="example@example.com" class="formulario"> </p>
+        <p><label for="password">Password</label> </p>
+        <p><input type="password" id="password" name="password" class="formulario"> </p>
+        <p><label for="birthdate">Birthdate</label> </p>
+        <p><input type="date" id="birthdate" name="birthdate" placeholder="mm/dd/yyyy" class="formulario"> </p>
+        <p><label for="country">Country of origin</label> </p>
+        <select name="pais" id="">
+            <option value="ar">Argentina</option>
+            <option value="br">Brazil</option>
+            <option value="us">United States</option>
+            <option value="cn">Canada</option>
+        </select>
+        <p><label for="">Message to Emilia</label> </p>
+        <textarea name="message" id="" cols="30" rows="10" placeholder=" Dear Emilia..."></textarea>
+
+        Suscribe to newsletter <input type="radio" name="suscribe"> 
+        Don't suscribe to newsletter <input type="radio" name="suscribe"> 
+        <br>
+        <input type="checkbox" name="terms" id="terms"> Accept terms & conditions
+        <br><br><br>
+        <button type="submit">Send</button>
+
+    </form>
+    
+</body>
+</html>

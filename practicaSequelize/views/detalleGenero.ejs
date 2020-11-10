@@ -1,0 +1,11 @@
+<%- include('./header')%>
+
+    <h1>Genero: <%=genero.name%></h1>
+
+    <ul>
+       <%for(let i=0 ; i < genero.peliculas.length ; i++) {%>
+        <li><%=genero.peliculas[i].title%> .......... Rating: <%=genero.peliculas[i].rating%></li>
+        <% } %> 
+    </ul>
+</body>
+</html>

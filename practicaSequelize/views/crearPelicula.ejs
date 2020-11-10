@@ -1,0 +1,25 @@
+<%- include('./header')%>
+
+    <form action="/movies/create" method="POST">
+        <label for="">Titulo</label> <br>
+        <input type="text"  name="title"> <br>
+        <label for="">Rating</label> <br>
+        <input type="text"  name="rating"> <br>
+        <label for="">Premios</label> <br>
+        <input type="text" name="awards"> <br>
+        <label for="">Fecha de estreno</label> <br>
+        <input type="date" name="release_date"> <br>
+        <label for="">Duracion</label> <br>
+        <input type="text" name="length"> <br>
+        <label for="">Genero</label> <br>
+        <select name="genre">
+            <%for(let i=0 ; i < generos.length ; i++) { %>
+                <option value="<%=generos[i].id%>">
+                    <%=generos[i].name%>
+                </option>
+            <% } %>
+        </select> <br>
+        <button type="submit">Crear</button>
+    </form>
+</body>
+</html>

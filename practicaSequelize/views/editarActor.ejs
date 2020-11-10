@@ -1,0 +1,13 @@
+<%- include('./header')%>
+
+    <form action="/actors/edit/<%=actor.id%>" method="POST">
+        <label for="">Nombre</label> <br>
+        <input type="text" name="first_name" value="<%=actor.first_name%>"> <br>
+        <label for="">Apellido</label> <br>
+        <input type="text" name="last_name" value="<%=actor.last_name%>"> <br>
+        <label for="">Rating</label> <br>
+        <input type="text"  name="rating" value="<%=actor.rating%>"> <br>
+        <button type="submit">Editar</button>
+    </form>
+</body>
+</html>

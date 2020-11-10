@@ -1,0 +1,26 @@
+<%- include('./header')%>
+    <h3>Agregar relacion actor-pelicula</h3>
+    <form action="/movies/agregarRelacion" method="POST">
+        <label for="">Pelicula: </label>
+        <select name="pelicula">
+            <option value="">Seleccionar pelicula</option>
+            <%for(let i=0 ; i < peliculas.length ; i++) { %>
+                <option value="<%=peliculas[i].id%>">
+                    <%=peliculas[i].title%>
+                </option>
+            <% } %>
+        </select> <br>
+        <label for="">Actor: </label>
+        <select name="actor">
+            <option value="">Seleccionar Actor</option>
+            <%for(let i=0 ; i < actores.length ; i++) { %>
+                <option value="<%=actores[i].id%>">
+                    <%=actores[i].first_name%> <%=actores[i].last_name%>
+                </option>
+            <% } %>
+        </select>
+        <br>
+        <button type="submit">Agregar relacion</button>
+    </form>
+</body>
+</html>

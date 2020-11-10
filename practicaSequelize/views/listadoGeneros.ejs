@@ -1,0 +1,11 @@
+<%- include('./header')%>
+
+    <h1>Listado de generos</h1>
+    <ul>
+        <%for (let i=0 ; i < generos.length ; i++) {%>
+           <a href="/genres/<%=generos[i].id%>"> <li><%=generos[i].name%></li> </a>
+        <% } %>
+    </ul>
+
+</body>
+</html>

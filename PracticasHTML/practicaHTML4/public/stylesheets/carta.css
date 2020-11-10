@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 960px;
+}
+
+header {
+    border-bottom: 1px solid black;
+    margin: auto 30px;
+}
+
+aside {
+    display: inline-block;
+    width: 255px;
+    vertical-align: top;
+    padding: 15px;
+    margin-left: 15px;
+}
+aside nav ul li {
+    list-style: none;
+  }
+
+  aside nav ul {
+      padding-left: 0;
+      margin-left: 0;
+  }
+  
+  aside nav ul a {
+    text-decoration: none;
+    color: black;
+    line-height: 30px;
+  }
+
+main {
+    display: inline-block;
+    vertical-align: top;
+    width: 580px;
+    padding: 15px;
+    border-left: 1px solid black;
+    margin: 30px auto;
+}
+main section h3 {
+    margin-top: 0;
+  }
+  main section ul li {
+    list-style: none;
+    line-height: 20px;
+  }
+  main section a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  main section img {
+    float: right;
+    width: 200px;
+  }
+
+footer {
+    padding: 20px;
+    background-color: #D8D8D8;
+}
+
+footer div {
+    display: inline-block;
+    vertical-align: top;
+}
+  
+footer div img {
+    width: 150px;
+  }
+
+footer .rrss {
+    margin-left: 600px;
+}
+
+footer div ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+footer div ul li {
+    list-style: none;
+  }
+
+  form {
+      margin: auto 20px;
+      padding-left: 15px;
+      background-color: #FCFCFC;
+      border-left: 1px solid #E1A701;
+      border-right: 1px solid #E1A701;
+  }
+
+  form h3 {
+      font-size: 14px;
+  }
+
+  form button {
+    width: 230px;
+    border-radius: 8px;
+    height: 25px;
+  }
+
+  .enviar {
+      background-color: #E1A701;
+      color: white;
+      border: 0px;
+  }
+
+  .borrar {
+      color: #E1A701;
+      border: 1px solid #E1A701;
+  }

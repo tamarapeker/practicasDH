@@ -1,0 +1,28 @@
+<%- include('./header')%>
+
+    <h1><%=pelicula.title%></h1>
+    <h3>Rating: <%=pelicula.rating%></h3>
+    <h3>Premios: <%=pelicula.awards%></h3>
+    <h3>Duracion: <%=pelicula.length%></h3>
+    <h3>Fecha de estreno: <%=pelicula.release_date%></h3>
+    <%if(pelicula.genre_id == null) {%>
+        <h3>Genero: </h3>
+    <%} else {%>
+    <h3><a href="/genres/<%=pelicula.generos.id%>"> Genero: <%=pelicula.generos.name%> </a></h3>
+    <% } %>
+    <h3>Actores: 
+        <ul>
+            <%for(let i=0 ; i < pelicula.actores.length ; i++) {%>
+                <a href="/actors/detail/<%=pelicula.actores[i].id%>"><li><%=pelicula.actores[i].first_name%> <%=pelicula.actores[i].last_name%></li></a>
+            <% } %>
+        </ul>
+    </h3>
+
+    <form action="/movies/edit/<%=pelicula.id%>" method="GET">
+        <button>MODIFICAR</button>
+    </form>
+    <form action="/movies/delete/<%=pelicula.id%>" method="POST">
+        <button>BORRAR</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<%- include('./header')%>
+
+    <ul>
+        <%for (let i=0 ; i < actores.length ; i++) {%>
+            <a href="/actors/detail/<%=actores[i].id%>"><li><%=actores[i].first_name%> <%=actores[i].last_name%> - 
+                <%=actores[i].rating%></li></a>
+        <% } %>
+    </ul>
+</body>
+</html>

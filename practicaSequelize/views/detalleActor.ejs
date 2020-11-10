@@ -1,0 +1,18 @@
+<%- include('./header')%>
+
+    <h1><%=actor.first_name%> <%=actor.last_name%></h1>
+    <h3>Rating: <%=actor.rating%></h3>
+    <ul>
+        <%for(let i=0 ; i < actor.peliculas.length ; i++) {%>
+       <a href="/movies/detail/<%=actor.peliculas[i].id%>"><li><%=actor.peliculas[i].title%></li></a>
+        <% } %>
+    </ul>
+
+    <form action="/actors/edit/<%=actor.id%>" method="GET">
+        <button>MODIFICAR</button>
+    </form>
+    <form action="/actors/delete/<%=actor.id%>" method="POST">
+        <button>BORRAR</button>
+    </form>
+</body>
+</html>
